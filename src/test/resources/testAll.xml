@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testNGpractice.VtigerParameters"/>
+      <class name="testNGpractice.ScreenShot"/>
+      <class name="testNGpractice.PriorityAnnotation"/>
+      <class name="testNGpractice.HardAssertions"/>
+      <class name="testNGpractice.SoftAssertions"/>
+      <class name="testNGpractice.OrangeHRM"/>
+      <class name="testNGpractice.TestAnnotations"/>
+      <class name="testNGpractice.SwagLabs"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

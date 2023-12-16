@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+	<test name="demotest1">
+	<groups>
+		<define name="dailybuild">
+			<include name="smoke" />
+			<include name="regression" />
+        </define>
+		<define name="weeklybuild">
+			<include name="smoke" />
+			<include name="sanity" />
+			<include name="regression" />
+			<include name="functional" />
+		</define>
+		<run>
+			<include name="weeklybuild" />
+		</run>
+	</groups>
+	<classes>
+			<class name="groupingconcept.Demo1" />
+			<class name="groupingconcept.Demo2" />
+    </classes>
+	</test>
+	
+	</suite> 
